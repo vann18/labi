@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h6 id="p1">Привет</h6>
+    <h4 id="test">Как дела?</h4>
+    <h4 id="p2">Что делаешь?</h4>
+    <button id="button">Скрыть все h6 заголовки</button>
+    <button id="but1">Спрятать элемент с id = test</button>
+    <button id="but2">Показать элемент с id = test</button>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#button").click(function () {
+                $("h6").hide();
+            })
+        })
+        $(document).ready(function () {
+            $("#but1").click( function () {
+                $("#test").hide();
+            })
+            $("#but2").click(function () {
+                $("#test").show();
+            })
+        })
+        $(document).ready(function () {
+            $("#p1").mouseenter(function () {
+                alert("Привет");
+            })
+            $("#test").mouseenter(function () {
+                alert("Как дела?");
+            })
+            $("#p2").mouseenter(function () {
+                alert("Что делаешь?");
+            })
+        })
+    </script>
+
+</body>
+</html>

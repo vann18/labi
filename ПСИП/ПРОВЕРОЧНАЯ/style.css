@@ -1,0 +1,27 @@
+
+body{
+    background: hotpink;
+}
+
+div{
+    
+    color: purple;
+    font-style: italic;  
+    text-align:right;
+}
+h1 {
+    color: green;
+    text-align: left;
+    
+}
+table{
+    margin: auto;
+    border: 2px solid black;
+}
+    
+td{
+    background-color: gray;
+    border: 2px solid black;
+}
+
+

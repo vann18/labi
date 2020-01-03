@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #image {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  </style>
+
+  <script>
+      function setNewPosition(){
+          var image = document.getElementById("image");
+          image.style.top = Math.random(2) * 500 + "px";
+          image.style.left = Math.random(2) * 500 + "px";
+          image.style.transition = "0.5s";
+      }
+  </script>
+</head>
+<body width="100%" height="100%">
+  <span id="image" onmousedown="setNewPosition()"><img width="150" height="150" src="https://s1.1zoom.ru/big0/56/Christmas_Crescent_Snowmen_Santa_Claus_573611_1280x794.jpg"></span>
+</body>
+</html>

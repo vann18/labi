@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="block">Количество пятых пар</div>
+    <button id="but1">Увеличить</button>
+    <a href="1.html"><button>RESET</button></a>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#but1").click(function () {
+                $("#block").animate({
+                    width: "70%",
+                    opacity: 0.4,
+                    marginLeft: "0.6in",
+                    fontSize: "3em",
+                    borderWith: "10px"
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

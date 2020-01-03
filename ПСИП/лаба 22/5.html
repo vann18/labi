@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+        #first, #second{
+            padding: 5px;
+            border: solid 2px black;
+            text-align: center;
+        }
+        #second{
+            display: none;
+            padding: 50px;
+        }
+    </style>
+    <div id="first">Первая панель</div>
+    <div id="second">Вторая панель</div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#first").click(function () {
+                $("#second").slideDown("slow")
+            })
+        })
+    </script>
+</body>
+</html>

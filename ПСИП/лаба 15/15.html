@@ -1,0 +1,19 @@
+<HTML>
+<P align=right ID='alfa' onMouseOver="M_Over()"
+onMouseOut="M_Out()">
+Событие onMouseOver</p>
+<SCRIPT>
+/*В результате исполнения сценария изменяется положение текста на строке.
+ Первоначально строка прижата к правому краю окна.
+ При попадании на неё курсора она выравнивается по центру, а после снятия курсора прижимается к левому краю окна.*/
+ 
+function M_Over()
+{ document.all.alfa.align='center'  // Для обращения к объекту используется коллекция all
+  document.all.alfa.style.color='FF00FF'
+}
+function M_Out()
+{ document.all.alfa.align='left'
+  document.all.alfa.style.color='0000FF'
+}
+</script>
+</html>

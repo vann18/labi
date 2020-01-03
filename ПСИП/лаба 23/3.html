@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="but1">Начать</button>
+    <button id="but2">Стоп</button>
+    <button id="but3">Назад</button>
+    <div id="block" style="background-color: black; width: 50px; height: 50px;"></div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#but1").click(function () {
+                $("#block").animate({marginLeft: "+=100px"}, 1500);
+            });
+        $("#but2").click(function () {
+                $("#block").stop();
+            });
+        $("#but3").click(function () {
+                $("#block").animate({marginLeft: "-=100px"}, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">1 блок</div>
+    <div id="div2">2 блок</div>
+    <div id="div3">3 блок</div>
+    <div id="div4">4 блок</div>
+    <div id="div5">5 блок</div>
+    <button id="but1">Показать блок</button>
+    <button id="but2">Скрыть все блоки</button>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").hide();
+            $("#but1").click(function () {
+                var div =  prompt("Введите номер блока который хотите увидеть")
+                $("#div"+div).fadeIn(3000);
+            })
+            $("#but2").click(function () {
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div3").hide();
+                $("#div4").hide();
+                $("#div5").hide();
+            })
+        })
+    </script>
+</body>
+</html>

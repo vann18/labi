@@ -1,0 +1,13 @@
+#content {
+    overflow: hidden;
+  }
+  
+  #left-content {
+    float: left;
+    width: 50%;
+  }
+  
+  #right-content {
+    float: right;
+    width: 50%;
+  }
