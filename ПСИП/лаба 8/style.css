@@ -1,0 +1,93 @@
+.box{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin:20px 50px 0;
+    display: inline-block;
+}
+
+.wrap:hover .box{
+    -webkit-transform: scale(2);
+}
+
+.box1{
+    background: #C06c84;
+    transition: .5s;
+}
+
+.box2{
+    background: #355C7D;
+    transition: .5s;
+}
+
+.box3{
+    background: #6c5b7b;
+    transition: .5s;
+}
+
+.ric {
+    height: 100px;
+    width: 100px;
+    margin: 50px 150px 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.one {
+    background-color: #f67280; 
+}
+
+.one:hover {
+    border: 1px solid #000000;
+    background-color: #355c7d;
+    border-top-left-radius: 100% 20px;
+    border-bottom-right-radius: 100% 20px;
+}
+
+.posDog{
+    width: 50%;
+    margin-top: 10px;
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    background-image:url('https://im0-tub-by.yandex.net/i?id=9d77349fd8c8559406a4600ce547dd72&n=13');
+
+    position: relative;
+    left: -70px;
+}
+
+.posDog:hover {
+    left: 50px;
+}
+
+.RicBack{
+    display: inline-block;
+    margin: 20px 40px 2em 50px;
+    background: rgba(228, 225, 228, .5);
+}
+
+.RicFront{
+width:  170px;
+height: 100px;
+line-height: 100px;
+
+-o-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.four{
+ background: rgba(255, 153, 0, .4)
+}
+
+.four:hover {
+    -o-transform: translate(-20px, 20px);
+    -ms-transform: translate(-20px, 20px);
+    -moz-transform: translate(-20px, 20px);
+    -webkit-transform: translate(-20px, 20px);
+    transform: translate(-20px, 20px);
+}

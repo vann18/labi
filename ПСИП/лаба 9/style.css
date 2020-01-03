@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background-image: url('http://3.bp.blogspot.com/-fkJkXvxcDxQ/UOu8lILXwrI/AAAAAAAAAVs/OeqcYWEJLPc/s1600/suckling+pig1.JPG');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Forte', sans-serif;
+    overflow: hidden;
+}
+
+h1{
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+h2{
+    font-size: 3em;
+}
+
+.share-block {
+    float: right;
+    padding-right: 15px;
+    line-height: 50px;
+}
+
+.share-block a {
+    color:#ffffff;
+    display: inline-block;
+    margin-right: 7px;
+    transition: .4s linear;
+}
+
+.share-block a:hover {
+    color: #48c5b3
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200;
+    perspective: 1200;
+    -moz-transform: perspective(1200px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    position: relative; 
+}
+
+.flipper {
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: .7s linear; 
+}
+
+.front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateX(0deg);
+}
+
+.back{
+    transform: rotateX(-180deg);
+    color: white;
+}
+
+.flipper:target {
+    transform: rotateX(180deg);
+}
+
+.inner {
+    padding: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.button {
+    text-decoration: none;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    line-height: 50px;
+    padding-left: 30px;
+    transition: .4s linear;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0;
+    height: 0;
+    border-top: 20px solid white;
+    border-right: 20px solid transparent;
+}
+
+/* .button:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    lfet: 8px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid white;
+    border-right: 20px solid transparent;
+} */
+
+.home:hover, .close:hover {
+    color: white;
+}
+
+.home, .close {
+    color: #999;
+    font-size: 20px;
+}

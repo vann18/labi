@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Лаба 6</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+      <h2>Какое-то название</h2>
+      <div id="navigation">
+        <h2>Главная</h2>
+        <a href="#info"><h2>Информация</h2></a>
+        <a href="#gallery"><h2>Галерея</h2></a>
+      </div>
+    </div>
+
+    <div id="run">
+      <marquee onmouseout="this.start()" onmouseover="this.stop()">
+        <img src="http://edumaterial.ru/pluginfile.php/1421/mod_assign/intro/1.gif" width="50px" height="50px">
+        <span>Доброго дня</span>
+      </marquee>
+    </div>
+
+    <div id="clear"></div>
+
+    <div id="contentpic">
+      <a name="gallery"></a>
+      <p class="pic">
+          <img src="http://edumaterial.ru/pluginfile.php/1421/mod_assign/intro/face.png" alt="1" width="300px" height="300px" class="one">
+          <img src="http://edumaterial.ru/pluginfile.php/1421/mod_assign/intro/face.png" alt="1" width="300px" height="300px" class="two">
+          <img src="http://edumaterial.ru/pluginfile.php/1421/mod_assign/intro/face.png" alt="1" width="300px" height="300px" class="three">
+
+      </p>
+    </div>
+
+    <div id="inf">
+      <a name="info"></a>
+      <h2>Информация</h2><br>
+      <h2><a href="https://vk.com/vannec">Я в ВК </a></h2>
+      <p align="center">
+        <img id="myImg" src="data:image/png;base64,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" width="150px" height="150px"><br>
+        <button onclick="document.getElementById('myImg').src = 'http://edumaterial.ru/pluginfile.php/1421/mod_assign/intro/face.png'" width="300px" height="300px" class="one"">Картинка 1</button>
+        <button onclick="document.getElementById('myImg').src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHkAwgMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUCAwYEB//EAD4QAAEEAQMBBgEICAUFAAAAAAEAAgMEEQUSITEGExQiQVFhFTJUcXOBkbElNUJSU5KT0SNEgqHhFjRiY8H/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/xAAgEQEBAAICAwEBAQEAAAAAAAAAAQIRAyEEEjETQXEy/9oADAMBAAIRAxEAPwD7gigIUEooUoCIhQQ5waMlazM1eC1bDpCAeB0XnNn4rDLl1V5gt++as2uDhwqYWfis47WHZBUTmT6LhFrhlEsYe3oVsW8ZiIikEREBERAREQEREBERARQiCUREBSoUIJWudxbDI4dQ0kLPKh3IUX4OPda+Kx8UvBqbX0bssD+jT5T7t9F5PFD3Xi58lxysruxxli6Fn4rMWlReKHushaHuqzlT6O40GUyV359Hq0VX2egdDpsbpBh8nnI9vb/ZWi9ni36Tbiz17dCIi0VEREBERAREQEREBERAREQERSEEKFKIIUoiCn7QaJHq0HB7uwz5kn/w/BfOdUo6jpk2y3A5o9HjlrvqK+q3bTK0e53JPQKgtyWdTeIiNzSN3dtwBx756rz/AC+Hjy7/AK6eHPLH/Hz9jpn9A5dF2Y0oWbAsahIyOuw8Me4AvP8AZXDdHnaf+1b/ADBbW6ZYb/lRn33BcnH49xy3ZtrnyzKajpY5InDET2OA/dOVkXBvUgLnoq9+E5ZC0f6wtOpXNThmZYFfIa3Dmh+cr0v31juxzTj3eq6bvGE8OB+orLI91wNHULTdYfJOO5hlztY4/NKv36j3TN/edAqY+XjZ2m8NjoEVRT1C7LA1xqMJI6mXGf8AZbxavH/Jxf1v+FvOXGxn61YKF4PE3vokX9b/AITxN/6JD/WP9lP6Q9a96Lx1LUss0kM8TY3taHDa/cCD9y9qvLtWzQiIpBQpRBCKUQEREBERA9VBUrVZf3cD3/utKi3UHL9qbhZHM8HhgwPuWXZeUzOY8+sJ/MLTqtF9mpIG4c4joT1W3sxG2CYQNlbIWRkHaOByF5ktvNt19TDTV298TT0e3qNaxci7tjXGaKctbWa0+Z/dggP46g9cL0X+0FqpaqxR1IZobFqKs2UzFrvOzduLdvp7fFevV26J3gbrE1Zpfhwjnm2h+Oh2k8qJOzelzNcZYnvkdMZxKZHbmvJyHD2x0GOgGF6LlUre3TfBu1B+my/JxYTHOCcB/fCJrHZGASXA8E4GfZenVNel03Uq1TVa0EUMsU877DJHOEbI8ckbfZ2fhhXHyFpncWK5qRmvZ3d7Cc7Hbjl3l6DJ5+tYT6DpdgRixUZKI43RsMhLvIcZbyehwOOiiyWJlc52usw0tNgvMrNtU5HgyyNkx3cRGTIOOQBz6Kko3In3nRMqlx+UmUa5lmJDyYxJvPHlG08D1X0Wzp9SyyNk8DHtizsaejQRjGPq4Xn/AOn9LHe4pRNM0jZXkZBL2/Ndn0Ix1+Cx/Hj3uxf3yc+e2IpaKb0tJjXNlnr9z3pLnSxF3TDclpDSc449Qt9btqyfTG3W1mjdYiqd3vduZM/B8w25DQDwcebqBggq6PZ7SHAB2nwECJ0Q4/YccuH3nr7qHdndHLXNdp8PMbIjx+yw5YP9Pp7LaanxS7Vh7S6o0adv0ZkTrtt1Vomnc0hwDzuxtztOzjODyumjLnRtMjQ15ALmg5wfUZXjm0mjOaxngErqr+8gc9xJY73BJ6r3ZU7HngP6Ul+xb+ZXvXgr/rST7Fv5lWCcfxGX1CKVCugRSEQQiKUEIiICIiAtNqEWK8kLiQHtIyPRblCizfQ5hjJ6rjXvDytPleOjwtemQVaF+axBNuZK3ljjyD8F7+1TXCrHOB5I3ec+wK4+S81h8sg3egB6rzOazizdfHLnGfaWS47WdUsU4XvmGnRP0xzYd++wHuywnB/8eDjqT6ZHpr6zrMF7V61iC9Mx1lzIHtjd/gMEIdub5cObv3N6k/WrLR7bYIWCxPHG5xHD3gdeivG2IWyCJ0zGybd2xzgDj3wuzj5LnjvTDLCS6cdUsavKOywfd1QG+x5v5gI7oiHjPk8n+J746qw0DVdS+VLFOzBbsQvuTMZPJG5vcxtxtPLQCD0BBJP1LpRZgdgieMggkHeOQOpWPjKxa5wsw7WDLiJBwPdabV05DVL+tw9qbEVQ3X1WzVdsbISWlrs95gluCBwT5uFX29d1qaLW5abNUgPyc59SN9d7nNsNkcAB5MZIx5RkY/FfQYrMMgj7uaNwkbuZh4O4e491jJcrRN3SWYWN3bdxkA83t1TY4fUtU1NhvirY1U7X0xARVechxHfY8nOBnPsvdp2s6ha7ZsibFfi04C1DI2eF+0vY5uxwO3ADhuI55C7HJCZT2hpl6JlYZTPCjadNVb9aSfYj81YKuq/rSX7EfmVYqeP4jL6KVCLRUREQERED0REQEREBERBhKGljg8AtxyCuJ02lXfqLyImNGCQAMLsb8ndU5n+zCuV0Z26+cfulcXk6ueMrbi3JVLrmlw6p2pv6UI6+bei9yZXkZhJefMB6kA56joFYVOy0lbVbVicG3H4nxNV5m2927uREWuGMnge+OenHPV49R+KnlbTLU1FdOJ7Ndm9c0Cka7fA22y1mRFskm0wEHB2O2csIJdtI4OeeV7JtD1atduT6U2kwStqRNc52HOZGfOPmnaXAnB5wur6lMqfZHq4av2Q1FtPTYt1eG1p8sssNpkhcWF0m7ABbyCwuH3rz2OyOuHs7LotXwMdewbnegzHOZTmM52EnHII4zxz6L6DlMp7mowqB8dSBkoAe2NrXAHIyB7rbkqMoo2lJKZUZUE8KBhU/Wsv2I/NWSrKZ/Ssn2I/NWa04v+VcvoiItFRERAREQEREBERBB4WO5YyuwtBkx6qly0mRo1136Knx8PzC4cyyQu3RSOYfdpwu01FwnrOhB+djK5a5WDCRyMLzvL3lluOrh66W3ZWOS5VnmuTTSDvNrMyOGABz0KsdVot+TrBqulZM1hLXCV3p968HZmdsel93nBbI7P3qxnuMZBI558oacrbC4/l2zyl9nI17FmRoLrM5z/7Xf3XR6FCyeOXxG+RwIwTI7p+K53TwAwA9Aui02YR5IGA4Y5K5/Hust1ryTrpaeCq/wz/O7+6kUqn8EH6yVjHOHgEFbA/K9CXGuaxHgqn8BieBp/R4/wAFmHKQ5T0jth4Kn9Gi/lCnwNP6LD/IFsypyrdHaIYIYc9zEyPPXa0DK2rDKkFWRWYUrEFSpQlQiIJRQiAiIgKHdFKxf0UUeWdy8MrnAHaMleuXqtDlz5/Wsc1dtahBYftpTSsJyHM5Xhnm1K2MR0ZGE/tS8Y+5dZJ1Wpy4c+O2626Jlr+KDT6luuza6QkuOT9a9M9exLE5heQHDBVmVPok45rRcnMN07VKzsQvbM32eMH8V6Wv1fG1lLB/eMgAXRDosmev1JjwzfVLyV5dLjsxwBtgt39TjorNhOFqb6rY3ourCa6Y5Xba1xWbXLWFmFrFG0FZArALJvVWiGaZKgIrxFbGrNYR+q2K8VQieqlBiilEH//Z'">Картинка 2</button>
+      </p>
+    </div>
+
+    <div id="cont">
+      <h2>О себе</h2>
+      <pre>
+        ВГПК УО ВГТУ
+        4 курс
+        группа 9ПЗ-45
+      </pre>
+      <p align="center"><img src="http://edumaterial.ru/pluginfile.php/1421/mod_assign/intro/face.png" usemap="#map1" alt="ЛИЦО"></p>
+      <p><map name="map1">
+        <area shape="circle" title="Левый глаз" coords="38,113,30" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0" target="blank">
+        <area shape="circle" title="Правый глаз" coords="109,113,30" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%B0%D1%8F_%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F" target="blank">
+        <area shape="circle" title="Ухо" coords="165,154,20" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0_%D0%B2_%D0%A1%D0%A1%D0%A1%D0%A0" target="blank">
+        <area shape="poly" title="Язык" coords="110, 180, 81, 187, 72, 203, 98, 198" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%BE%D0%B5_%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE" target="blank">
+      </map></p>
+    </div>
+
+    <div id="footer">
+      <h2>Иван Тимохин</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Framset//EN" "http://www.w3.org/TR/html/frameset.dtd">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Документ с фреймами</title>
+    </head>
+    <frameset rows="100, *" border=3>
+        <frame src="frame_top.html" noresize>
+            <frameset cols="10%, 90%" border=7 bordercolor="red">
+                <frame src="frame_left.html"></frame>
+                <frame src="frame_right.html" name="frame_right"></frame>
+            </frameset>
+            <noframes>
+                <p>Ваш браузер не отображает фреймы</p>
+            </noframes>
+
+    </frameset>
+    
+        
+        
+</html>

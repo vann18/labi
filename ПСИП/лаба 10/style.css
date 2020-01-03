@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+body {
+  height: 200px;
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+h1, h2 {
+  font-family: 'Mansalva', 'sans-serif';
+}
+
+.news {
+  display: inline-block;
+  column-count: 3;
+  column-width: auto;
+  column-gap: 3px;
+  column-rule-color: #523;
+  column-rule-style: double;
+  column-rule-style: thick;
+}
